@@ -42,7 +42,7 @@ export default class App extends Component {
     this.setState({ filter: e.currentTarget.value });
   };
   // Добовляем в LocalStorage
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevState) {
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
