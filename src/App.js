@@ -48,7 +48,7 @@ export default class App extends Component {
     }
   }
 
-  // Просматриваем на странице
+  // Просматриваем/читаем в LocalStorege на странице
   componentDidMount() {
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
